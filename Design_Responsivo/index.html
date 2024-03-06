@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Única</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#inicio" class="logo">ANABRL</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#tecnicas">Técnicas</a></li>
+                <li><a href="#frameworks">Frameworks</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="inicio" class="container">
+        <h1>O que é Design Responsivo?</h1>
+       <p>
+        <br>Design Responsivo é um conjunto de técnicas que inclui otimizações no layout e design de uma página na internet para que ela possa ser acessada por qualquer tipo de dispositivo móvel (smartphone, tablet e notebook) ou desktop (computador), independentemente da resolução de tela.</br>
+
+            <br>Esse é um dos pilares da experiência do usuário (UX design) que mais do que nunca, tem sido essencial para que os sites tenham uma boa qualidade e entreguem as melhores experiências de navegabilidade para seus usuários.</br>
+            
+            <br> Para que tudo isso aconteça, é utilizada a combinação de duas linguagens de programação: o HTML, linguagem padrão utilizada para inserir o conteúdo e estabelecer a estrutura básica de um website, e o CSS, que permite customizar estilos, como cores, margens, formas e tipos de letras em uma página na internet.</br>
+        </p>
+        <img src="foto.jpeg" style="width: 500px; height: auto; display: block; margin: 0 auto;" alt="">
+
+
+    </div>
+    <div id="tecnicas" class="container">
+        <h1>Técnicas</h1>
+        <p>
+            <br> 1.	Layout flúido</br>
+            <br>Uso de medidas flexíveis relacionadas ao tamanho da tela/resolução do dispositivo. Basicamente é implementado pela definição do tamanho e posicionamento dos elementos usando porcentagens (%) em vez de pixels. 
+            As porcentagens preservam o tamanho e o alinhamento de um elemento em relação ao elemento pai, quando o elemento pai sofre alteração de tamanho devido à tela do dispositivo, o elemento filho também muda para se adaptar as novas medidas, mantendo a porcentagem relativa ao pai.</br>
+            <br>2.	Imagens flexíveis</br>
+            <br>São imagens que não ultrapassam o tamanho do elemento pai (contêiner), mesmo quando o seu tamanho original é maior que o contêiner. Tecnicamente isso é feito por meio do CSS, adicionando a propriedade max-width : 100% a imagem. Assim, o tamanho da imagem será no máximo do tamanho do seu elemento pai.</br>
+            <br>Em um exempo, onde uma div com largura de 250px e dentro dela tem uma imagem, se a imagem for menor que 250px ela ficará com seu tamanho original na tela, se a imagem for maior que 250px ela será redimensionada para caber dentro da div, pois ela está com a propriedade CSS max-width: 100%, isso implica que a imagem dentro da div nunca será exibida maior que o tamanho da div (250px), independente do tamanho da tela do dispositivo de acesso.</br>
+            <br>3.	Media Queries</br>
+            <br>Possibilitam sobrescrever propriedades do CSS dependendo do tamanho e/ou resolução do dispositivo. Com isso, é possível definir pontos de quebra (breakpoints) para sobrescrita de propriedades do CSS, que são carregados dependendo do tamanho/resolução do dispositivo.</br>
+            <br>As media queries permitem que um documento HTML detecte o tamanho e a orientação da janela de visualização e aplique diferentes estilos e atributos de acordo com o tamanho/resolução da tela e os breakpoints definidos. </br>
+            <br>Por exemplo, um telefone pode exibir o conteúdo em uma página Web em coluna única, enquanto um tablet pode exibir o mesmo conteúdo em duas colunas e um desktop pode exibir em três colunas. Essas alterações, chamadas substituições, ocorrem para tamanhos ou intervalos de tamanho especificados nas media queries.</br>
+            <br>4.	Flexbox</br>
+            <br>Flexbox é um recurso do CSS utlizado para organizar espacialmente os elementos em uma interface, além de possuir capacidades avançadas de alinhamento.</br>
+            <br>A área de um documento HTML que usa o flexbox é chamada de contêiner flex. Para criar um contêiner flex basta definir o valor da propriedade display do elemento com o valor flex. Desse modo, os elementos-filhos desse contêiner tornam-se do tipo flex. 
+            Por exemplo, body { display: flex;}, define o elemento body como um flex contêiner, tornando os seus filhos flex-itens, ou seja, todos os elementos que estão imediatamente dentro do body tornam se flexíveis, sendo alinhados de acordo com as propriedades definidas no flex contêiner.</br>
+            </p>
+    </div>
+    <div id="frameworks" class="container">
+        <h1>Frameworks</h1>
+       <p>
+        <br>Desenvolver um site responsivo do zero pode ser um processo longo. Os frameworks disponibilizam uma espécie de esqueleto para você moldar seu projeto a partir deles, ou seja, você não precisa perder tempo estruturando as etapas iniciais.
+            Todo os frameworks têm suas regras de desenvolvimento e cada um deles disponibiliza seu manual de uso, existindo uma curva de aprendizagem para o início da utilização. Todavia, considerando a velocidade resultante em desenvolver um site, o tempo da curva de aprendizagem passa a ser minúsculo.</br>
+            Dentre alguns dos frameworks que existem, estão eles:</br>
+            <br>1.	Bootstrap</br>
+            <br>Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples. Além disso, pode lidar com sites de desktop e páginas de dispositivos móveis da mesma forma.
+            Originalmente, o Bootstrap foi desenvolvido para o Twitter por um grupo de desenvolvedores liderados por Mark Otto e Jacob Thornton Logo e se tornou uma das estruturas de front-end e projetos de código aberto mais populares do mundo.
+            Antes de ser uma estrutura de código-fonte aberto, o Bootstrap era conhecido como Twitter Blueprint. Após alguns meses de desenvolvimento, o Twitter realizou sua primeira Hack Week: o projeto ganhou uma grande popularidade quando desenvolvedores de todos os níveis de habilidade usaram o framework sem qualquer orientação externa. 
+            Após o evento, ele serviu como guia de estilo para o desenvolvimento de ferramentas internas na empresa por mais de um ano antes de seu lançamento se tornar público.</br>
+            
+            <br>2.	Skeleton</br>
+            <br>Skeleton é uma coleção de arquivos CSS que pode ser muito útil aos desenvolvedores web. Para desenvolver rapidamente sites que se adaptam a qualquer resolução de tela, seja ela uma tela de 21º de um monitor desktop ou uma de 14º de um notebook ou até mesmo a tela de um dispositivo móvel tipo iPhone, por exemplo. Esse framework conta ainda com estilos para títulos, botões, entre outros. 
+            A grade (grid) do Skeleton é muito semelhante, por exemplo, à do também muito utilizado framework 960 grid. A sintaxe é simples e o resultado é o mesmo em qualquer navegador. A vantagem disso é futuramente navegar em dispositivos que não usam dimensões conjuntas, por isso, todas as consultas foram elaboradas para serem as melhores em dispositivos móveis.</br>
+    
+            <br>3.	Foudation</br>
+            <br>Zurb Foundation é um framework Front End para o desenvolvimento responsivo de forma rápida priorizando o valor semântico dos elementos, mantendo uma estrutura HTML limpa e de carregamento rápido. Utiliza o conceito mobile first e melhoria progressiva (Progressive Enhancement) para criação de design responsivo. Você pode fazer o download apenas de partes do framework que lhe interessa. Caso queira apenas usar o seu grid, ou botões, formulários, etc.</br>
+            <br>Segundo seus criadores o Foundation é o Framework para Frond End mais avançado de todos, e de todas suas vantagens podemos destacar:</br>
+            <br>•	Semântica: pensando em performance toda a marcação utilizada respeita a semântica dos elementos HTML obtendo um código mais limpo e bem organizado.</br>
+            <br>•	Filosofia Mobile-First: o framework adota o conceito de mobile-first para o desenvolvimento, facilitando a criação de layoust responsivos. Dessa forma podemos aplicar também outro conceito tão fundamental no desenvolvimento de sistemas web, a melhoria progressiva.</br>
+            <br>•	Personalizar o framework: Sem dúvida uma grande vantagem é a possibilidade de personalizar o framework na hora de fazer o download do framework. Você pode escolher quais os plugins serão usados, cores dos elementos, quantidade e largura de colunas, etc.</br>
+            
+            <br>4.	Conclusão</br>
+            <br>Entendendo o que é design responsivo e as técnicas básicas para sua execução eficiente, bem como a existência de frameworks que simplificam e agilizam o processo de desenvolvimento, fica claro que adaptar um site a diferentes dispositivos é essencial para uma experiência satisfatória do usuário. 
+             A utilização de layouts flexíveis, imagens flexíveis, media queries e flexboxes demonstra o compromisso em garantir acessibilidade e navegação, independente do dispositivo utilizado. A disponibilidade de frameworks como Bootstrap, Wirefy, Skeleton e Foundation fornece aos desenvolvedores recursos valiosos, permitindo-lhes criar sites responsivos de forma mais eficiente e ágil.
+             Em suma, o design responsivo não é apenas uma sugestão, mas sim um requisito essencial no atual ambiente web onde diversos dispositivos são uma realidade constante.</br>
+            </p>
+    </div>
+    <div class="navbar-space"></div>
+    <script src="script.js"></script>
+</body>
+</html>
