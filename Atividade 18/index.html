@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 18</title>
+</head>
+
+<body>
+  <script>
+
+    function Validar(event) {
+      var nome = document.getElementById('nome').value
+      var email = document.getElementById('email').value
+      var comentario = document.getElementById('comentario').value
+      var sim = document.getElementById('sim').checked
+      var nao = document.getElementById('nao').checked
+      var limpar = document.getElementById('limpar')
+
+      if (nome.length < 10) {
+        alert('Escreva um nome com no mínimo 10 caracteres')
+        event.preventDefault()
+        return false
+      }
+      if (comentario.length < 20) {
+        alert('Escreva um comentário com no mínimo 20 caracteres')
+        event.preventDefault()
+        return false
+      }
+      if (!email.includes('@') || !email.includes('.')) {
+        alert('O email deve conter @ e .')
+        event.preventDefault()
+        return false
+      }
+      if (!sim && !nao) {
+        alert('Você deve selecionar uma das opções')
+        event.preventDefault()
+        return false
+      }
+      else {
+        alert(sim ? 'Que bom que você voltou a visitar esta página!' : 'Volte sempre a esta página!')
+      }
+      return true
+    }
+
+  </script>
+
+  <div class="container">
+    <form action="" method="get" onsubmit="return Validar()">
+      <input type="text" name="" id="nome" placeholder="Nome:" minlength="10">
+      <input type="email" name="" id="email" placeholder="Email:">
+      <input type="text" name="" id="comentario" placeholder="Comentário:" minlength="20">
+      <h3>Pesquisa:</h3>
+      <p>Primeira vez nesta página?</p>
+      <input type="checkbox" name="Sim" id="sim">
+      <label for="sim">Sim</label>
+      <input type="checkbox" name="Não" id="nao">
+      <label for="nao">Não</label>
+      <input type="submit">
+      <input type="reset" value="limpar">
+    </form>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 100%;
+        max-width: 500px;
+        margin-top: 30px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="submit"],
+      input[type="reset"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #bdc3c7;
+        border-radius: 5px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+      }
+
+      input[type="text"]#comentario {
+        height: 150px;
+        resize: vertical;
+      }
+
+      h3 {
+        font-size: 1.5em;
+        color: #2c3e50;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .checkbox-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .checkbox-group input[type="checkbox"] {
+        margin: 0 5px;
+      }
+
+      .checkbox-group label {
+        margin: 0 15px;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        background-color: #2980b9;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: #4aabeb;
+      }
+
+      input[type="reset"] {
+        background-color: #2980b9;
+      }
+
+      input[type="reset"]:hover {
+        background-color: #4aabeb;
+      }
+    </style>
+  </div>
+</body>
+
+</html>
