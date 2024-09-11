@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade extra 2</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Cursos Fatec Sorocaba</h1>
+    <select name="" id="opcoes" onchange="verify()">
+        <option value="">Selecione o curso</option>
+        <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+        <option value="Eletrônica Automotiva">Eletrônica Automotiva</option>
+        <option value="Fabricação Mecânica">Fabricação Mecânica</option>
+        <option value="Gestão Empresarial EAD">Gestão Empresarial EAD</option>
+        <option value="Gestão da Qualidade">Gestão da Qualidade</option>
+        <option value="Manufatura Avançada">Manufatura Avançada</option>
+        <option value="Logística">Logística</option>
+        <option value="Polímeros">Polímeros</option>
+        <option value="Processos Metalúrgicos">Processos Metalúrgicos</option>
+        <option value="Projetos Mecânicos">Projetos Mecânicos</option>
+        <option value="Sistemas Biomédicos">Sistemas Biomédicos</option>
+    </select>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        select {
+            font-family: 'Arial', sans-serif;
+            font-size: 1em;
+            color: #34495e;
+            background-color: #ecf0f1;
+            border: 2px solid #bdc3c7;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        select:focus {
+            border-color: #3498db;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            outline: none;
+        }
+    </style>
+</body>
+
+</html>
